@@ -41,7 +41,7 @@ todoState.errMsg = "Todo value cannot be empty"
   border: 2px solid #2cbad3;
 
   &.input-err {
-    border-color: red;
+    border-color: #E0115F;
   }
 
 
@@ -70,5 +70,5 @@ todoState.errMsg = "Todo value cannot be empty"
   margin-top: 6px;
   font-size: 12px;
   text-align: center;
-  color: red;
+  color: #E0115F;
 }</style>
