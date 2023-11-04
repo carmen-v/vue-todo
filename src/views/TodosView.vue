@@ -18,9 +18,10 @@ const createTodo = (todo) => {
   <main>
    <h1>Create Todo</h1>
    <TodoCreator @create-todo="createTodo"/>
-   <ul>
+   <ul class="todo-list">
     <TodoItem :key="todo.id" v-for="todo in todoList" :todo="todo"/>
     </ul>
+    
   </main>
 </template>
 
@@ -37,4 +38,21 @@ main {
     margin-bottom: 16px;
     text-align: center;
   }
-}</style>
+
+  .todo-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 24px;
+    gap: 20px;
+  }
+
+  .todos-msg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 24px;
+  }
+}
+</style>
