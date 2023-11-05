@@ -85,5 +85,19 @@ const deleteTodo = (todoId) => {
 </template>
 
 <style lang="scss" scoped>
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 24px;
+    gap: 20px;
+  }
 
+  .todos-msg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 24px;
+  }
 </style>
