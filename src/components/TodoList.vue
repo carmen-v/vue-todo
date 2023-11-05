@@ -15,6 +15,7 @@ const fetchTodoList = () => {
 
 fetchTodoList()
 
+ //add new todo from the input field
 const createTodo = (todo) => {
   todoList.value.push({
     id: uid(),
