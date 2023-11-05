@@ -50,19 +50,6 @@ header {
           font-size: 24px;
         }
       }
-  
-      .nav-routes {
-        display: flex;
-        flex: 1;
-        justify-content: flex-end;
-        gap: 12px;
-        list-style: none;
-  
-        a {
-          text-decoration: none;
-          color: inherit;
-        }
-      }
     }
   }
 </style>

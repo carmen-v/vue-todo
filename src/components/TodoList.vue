@@ -15,7 +15,6 @@ const fetchTodoList = () => {
 
 fetchTodoList()
 
-
 const createTodo = (todo) => {
   todoList.value.push({
     id: uid(),
