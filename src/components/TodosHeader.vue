@@ -21,6 +21,7 @@
   .container {
     max-width: 1100px;
     margin: 0 auto;
+    margin-bottom: 20px;
     
     .branding {
       display: flex;

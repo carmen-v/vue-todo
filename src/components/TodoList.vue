@@ -1,53 +1,32 @@
 <script setup>
-import { ref, watch } from 'vue'
+import { ref} from 'vue'
 import { uid } from 'uid'
 import TodoForm from '../components/TodoForm.vue'
 import TodoItem from '../components/TodoItem.vue'
 import { Icon } from '@iconify/vue'
 const todoList = ref([])
 
-watch(
-  todoList,
-  () => {
-    setTodoListLocalStorage()
-  },
-  {
-    deep: true
-  }
-)
-
 const fetchTodoList = () => {
-  const savedTodoList = JSON.parse(localStorage.getItem('todoList'))
-  if (savedTodoList) {
-    todoList.value = savedTodoList
-  }
-}
-
-fetchTodoList()
-const actualFetchTodoList = () => {
   //get all available todos from API:
   fetch('https://dummyjson.com/todos')
       .then(response => response.json())
       .then(data => todoList.value = data.todos);
 }
 
-actualFetchTodoList()
+fetchTodoList()
 
-const setTodoListLocalStorage = () => {
-  localStorage.setItem('todoList', JSON.stringify(todoList.value))
-}
 
 const createTodo = (todo) => {
   todoList.value.push({
     id: uid(),
     todo,
-    isCompleted: null,
+    completed: null,
     isEditing: null
   })
 }
 
 const toggleTodoComplete = (todoPos) => {
-  todoList.value[todoPos].isCompleted = !todoList.value[todoPos].isCompleted
+  todoList.value[todoPos].completed = !todoList.value[todoPos].completed
 }
 
 const toggleEditTodo = (todoPos) => {
@@ -85,6 +64,13 @@ const deleteTodo = (todoId) => {
 </template>
 
 <style lang="scss" scoped>
+
+h1 {
+  text-align: center;
+  background: -webkit-linear-gradient(rgb(199, 17, 169), #333333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .todo-list {
     display: flex;
     flex-direction: column;
