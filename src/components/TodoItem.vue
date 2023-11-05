@@ -16,13 +16,13 @@ defineEmits(['toggle-complete', 'edit-todo', 'update-todo', 'delete-todo']);
 </script>
 <template>
     <li>
-        <input type="checkbox" :checked="todo.isCompleted" @input="$emit('toggle-complete', index)" />
+        <input type="checkbox" :checked="todo.completed" @input="$emit('toggle-complete', index)" />
         <div class="todo">
             <input v-if="todo.isEditing" type="text" :value="todo.todo" @input="$emit('update-todo', $event.target.value, index)"/>
             <span
         v-else
         :class="{
-          'completed-todo': todo.isCompleted,
+          'completed-todo': todo.completed,
         }"
       >
         {{ todo.todo }}
