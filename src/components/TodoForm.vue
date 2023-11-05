@@ -38,6 +38,7 @@ todoState.errMsg = "Todo value cannot be empty"
     display: flex;
     transition: 250ms ease;
     border: 2px solid #2cbad3;
+    margin-bottom: 20%;
   
     &.input-err {
       border-color: #E0115F;

@@ -77,6 +77,9 @@ h1 {
     list-style: none;
     margin-top: 24px;
     gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+    width: 80%;
   }
 
   .todos-msg {
