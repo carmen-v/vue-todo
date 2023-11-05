@@ -34,10 +34,14 @@ todoState.errMsg = "Todo value cannot be empty"
 </template>
 <style lang="scss" scoped>
 .input-wrap {
-    margin-top: 10%;
+
+    margin: auto;
+    margin-top: 50px;
     display: flex;
     transition: 250ms ease;
     border: 2px solid #2cbad3;
+    max-width: 900px;
+    margin-bottom: 50px;
   
     &.input-err {
       border-color: #E0115F;
@@ -53,6 +57,7 @@ todoState.errMsg = "Todo value cannot be empty"
       width: 100%;
       padding: 8px 6px;
       border: none;
+    
   
       &:focus {
         outline: none;
