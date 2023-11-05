@@ -1,7 +1,7 @@
 <script setup>
 import { ref, watch } from 'vue'
 import { uid } from 'uid'
-import TodoCreator from '../components/TodoCreator.vue'
+import TodoForm from '../components/TodoForm.vue'
 import TodoItem from '../components/TodoItem.vue'
 import { Icon } from '@iconify/vue'
 const todoList = ref([])
@@ -57,8 +57,7 @@ const deleteTodo = (todoId) => {
 
 <template>
   <main>
-    <h1>Create Todo</h1>
-    <TodoCreator @create-todo="createTodo" />
+    <h1>You can do it!</h1>
     <ul class="todo-list" v-if="todoList.length > 0">
       <TodoItem
         :key="todo.id"
@@ -75,6 +74,7 @@ const deleteTodo = (todoId) => {
       <Icon icon="noto-v1:exclamation-mark" color="#2cbad3" width="22" />
       <span>You have no to-dos to complete. Add one. </span>
     </p>
+    <TodoForm @create-todo="createTodo" />
   </main>
 </template>
 
@@ -90,6 +90,9 @@ main {
   h1 {
     margin-bottom: 16px;
     text-align: center;
+    background: -webkit-linear-gradient(#db0eaf, #356480);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   }
 
   .todo-list {

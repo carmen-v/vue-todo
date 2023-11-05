@@ -25,7 +25,7 @@ todoState.errMsg = "Todo value cannot be empty"
 <template>
     <div class="input-wrap" :class="{'input-err' : todoState.invalid}">
         <input type="text" v-model="todoState.todo"/>
-        <button @click="createTodo()">Create</button>
+        <button @click="createTodo()">Submit</button>
        
     </div>
 
@@ -36,6 +36,7 @@ todoState.errMsg = "Todo value cannot be empty"
 
 <style lang="scss" scoped>
 .input-wrap {
+  margin-top: 10%;
   display: flex;
   transition: 250ms ease;
   border: 2px solid #2cbad3;

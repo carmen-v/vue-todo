@@ -1,5 +1,6 @@
 <script setup>
 import { Icon } from '@iconify/vue';
+// eslint-disable-next-line no-unused-vars
 const props = defineProps({
     todo: {
         type: Object,
