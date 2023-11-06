@@ -25,7 +25,7 @@ li {
       0 2px 4px -2px rgb(0 0 0 / 0.1);
 
     &:checked {
-      background-color: #41b080;
+      background-color: $ternary
     }
   }
 
@@ -39,7 +39,7 @@ li {
     input[type='text'] {
       width: 100%;
       padding: 2px 6px;
-      border: 2px solid #41b080;
+      border: 2px solid $secondary;
     }
   }
 

@@ -3,17 +3,19 @@
   margin-top: 50px;
   display: flex;
   transition: 250ms ease;
-  border: 2px solid #2cbad3;
+  border: 2px solid $primary;
   max-width: 900px;
-  margin-bottom: 50px;
+
   &.input-err {
-    border-color: #e0115f;
+    border-color: $primary;
   }
+
   &:focus-within {
     box-shadow:
       0 -4px 6px -1px rgb(0 0 0 / 0.1),
       0 -2px 4px -2px rgb(0 0 0 / 0.1);
   }
+
   input {
     width: 100%;
     padding: 8px 6px;
@@ -22,15 +24,20 @@
       outline: none;
     }
   }
+  
   button {
     padding: 8px 16px;
     border: none;
   }
 }
+
 .err-msg {
   margin-top: 6px;
   font-size: 12px;
   text-align: center;
-  color: #e0115f;
-  margin-bottom: 20%;
+  color: $primary;
+}
+
+.form-container {
+  margin-bottom: 10%;
 }

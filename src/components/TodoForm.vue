@@ -23,6 +23,7 @@ todoState.errMsg = "Todo value cannot be empty"
 </script>
 
 <template>
+    <div class="form-container">
     <div class="input-wrap" :class="{'input-err' : todoState.invalid}">
         <input type="text" v-model="todoState.todo"/>
         <button @click="createTodo()">Submit</button>
@@ -31,6 +32,7 @@ todoState.errMsg = "Todo value cannot be empty"
 
     <!-- show an error message when there is no text for the todo --> 
     <p v-show="todoState.invalid" class="err-msg">{{ todoState.errMsg }}</p>
+</div>
 </template>
 <style lang="scss">
 

@@ -1,9 +1,11 @@
 h1 {
   text-align: center;
-  background: -webkit-linear-gradient(rgb(199, 17, 169), #333333);
+  background: -webkit-linear-gradient($primary, $secondary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding: 15px;
 }
+
 .todo-list {
   display: flex;
   flex-direction: column;
@@ -12,6 +14,7 @@ h1 {
   gap: 20px;
   max-width: 1000px;
   margin: auto;
+  margin-top: 20px;
   width: 80%;
 }
 

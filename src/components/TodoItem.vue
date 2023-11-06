@@ -29,8 +29,8 @@ const props = defineProps({
         </div>
         <div class="todo-actions">
             <Icon v-if="todo.isEditing" icon="ph:check-circle" class="icon" color="#42b883" width="22" @click="$emit('edit-todo', index)"/>
-            <Icon v-else icon="ph:pencil-fill" class="icon" color="#2cbad3" width="22" @click="$emit('edit-todo', index)"/>
-            <Icon icon="ph:trash" class="icon" color="#E0115F" width="22" @click="$emit('delete-todo', todo.id)"/>
+            <Icon v-else icon="ph:pencil-fill" class="icon" color="#06768d" width="22" @click="$emit('edit-todo', index)"/>
+            <Icon icon="ph:trash" class="icon" color="#e0115f" width="22" @click="$emit('delete-todo', todo.id)"/>
         </div>
     </li>
 </template>

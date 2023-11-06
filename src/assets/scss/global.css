@@ -1,14 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito&family=Sora&display=swap");
+* {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .input-wrap {
   margin: auto;
   margin-top: 50px;
   display: flex;
   transition: 250ms ease;
-  border: 2px solid #2cbad3;
+  border: 2px solid #e0115f;
   max-width: 900px;
-  margin-bottom: 50px;
 }
 .input-wrap.input-err {
-  border-color: #E0115F;
+  border-color: #e0115f;
 }
 .input-wrap:focus-within {
   box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1), 0 -2px 4px -2px rgba(0, 0, 0, 0.1);
@@ -30,8 +37,11 @@
   margin-top: 6px;
   font-size: 12px;
   text-align: center;
-  color: #E0115F;
-  margin-bottom: 20%;
+  color: #e0115f;
+}
+
+.form-container {
+  margin-bottom: 10%;
 }
 
 * {
@@ -56,21 +66,18 @@
 
 header {
   background-color: #f1f1f1;
+  padding: 15px;
+  margin-bottom: 20px;
 }
-header nav {
-  display: flex;
-  align-items: center;
-  padding: 25px 16px;
-}
-header nav .branding {
+header .branding {
   display: flex;
   align-items: center;
   gap: 8px;
 }
-header nav .branding img {
+header .branding img {
   max-width: 50px;
 }
-header nav .branding h1 {
+header .branding h1 {
   font-size: 24px;
 }
 
@@ -96,7 +103,7 @@ li input[type=checkbox] {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
 }
 li input[type=checkbox]:checked {
-  background-color: #41b080;
+  background-color: #42b883;
 }
 li .todo {
   flex: 1;
@@ -107,7 +114,7 @@ li .todo .completed-todo {
 li .todo input[type=text] {
   width: 100%;
   padding: 2px 6px;
-  border: 2px solid #41b080;
+  border: 2px solid #06768d;
 }
 li .todo-actions {
   display: flex;
@@ -121,9 +128,10 @@ li .todo-actions .icon {
 
 h1 {
   text-align: center;
-  background: -webkit-linear-gradient(rgb(199, 17, 169), #333333);
+  background: -webkit-linear-gradient(#e0115f, #06768d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding: 15px;
 }
 
 .todo-list {
@@ -134,6 +142,7 @@ h1 {
   gap: 20px;
   max-width: 1000px;
   margin: auto;
+  margin-top: 20px;
   width: 80%;
 }
 
