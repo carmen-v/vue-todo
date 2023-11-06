@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito&family=Sora&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito&family=Sora&display=swap');
 * {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,7 +18,9 @@
   border-color: #e0115f;
 }
 .input-wrap:focus-within {
-  box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1), 0 -2px 4px -2px rgba(0, 0, 0, 0.1);
+  box-shadow:
+    0 -4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 -2px 4px -2px rgba(0, 0, 0, 0.1);
 }
 .input-wrap input {
   width: 100%;
@@ -45,7 +47,7 @@
 }
 
 * {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -87,22 +89,26 @@ li {
   gap: 10px;
   padding: 16px 10px;
   background-color: #f1f1f1;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 8px 10px -6px rgba(0, 0, 0, 0.1);
 }
 li:hover .todo-actions {
   opacity: 1;
 }
-li input[type=checkbox] {
+li input[type='checkbox'] {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   width: 20px;
   height: 20px;
   background-color: #fff;
   border-radius: 50%;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
 }
-li input[type=checkbox]:checked {
+li input[type='checkbox']:checked {
   background-color: #42b883;
 }
 li .todo {
@@ -111,7 +117,7 @@ li .todo {
 li .todo .completed-todo {
   text-decoration: line-through;
 }
-li .todo input[type=text] {
+li .todo input[type='text'] {
   width: 100%;
   padding: 2px 6px;
   border: 2px solid #06768d;
@@ -152,4 +158,4 @@ h1 {
   justify-content: center;
   gap: 8px;
   margin-top: 24px;
-}/*# sourceMappingURL=global.css.map */
+} /*# sourceMappingURL=global.css.map */
