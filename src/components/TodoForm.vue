@@ -32,49 +32,6 @@ todoState.errMsg = "Todo value cannot be empty"
     <!-- show an error message when there is no text for the todo --> 
     <p v-show="todoState.invalid" class="err-msg">{{ todoState.errMsg }}</p>
 </template>
-<style lang="scss" scoped>
-.input-wrap {
+<style lang="scss">
 
-    margin: auto;
-    margin-top: 50px;
-    display: flex;
-    transition: 250ms ease;
-    border: 2px solid #2cbad3;
-    max-width: 900px;
-    margin-bottom: 50px;
-  
-    &.input-err {
-      border-color: #E0115F;
-    }
-  
-  
-    &:focus-within {
-      box-shadow: 0 -4px 6px -1px rgb(0 0 0 / 0.1),
-        0 -2px 4px -2px rgb(0 0 0 / 0.1);
-    }
-  
-    input {
-      width: 100%;
-      padding: 8px 6px;
-      border: none;
-    
-  
-      &:focus {
-        outline: none;
-      }
-    }
-  
-    button {
-      padding: 8px 16px;
-      border: none;
-    }
-  }
-  
-    .err-msg {
-    margin-top: 6px;
-    font-size: 12px;
-    text-align: center;
-    color: #E0115F;
-    margin-bottom: 20%;
-  }
 </style>

@@ -63,30 +63,6 @@ const deleteTodo = (todoId) => {
     <TodoForm @create-todo="createTodo" />
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
-h1 {
-  text-align: center;
-  background: -webkit-linear-gradient(rgb(199, 17, 169), #333333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.todo-list {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    margin-top: 24px;
-    gap: 20px;
-    max-width: 1000px;
-    margin: auto;
-    width: 80%;
-  }
-
-  .todos-msg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    margin-top: 24px;
-  }
 </style>
