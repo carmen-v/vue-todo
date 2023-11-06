@@ -9,6 +9,7 @@ const todoState = reactive({
   errMsg: ''
 })
 
+//create a to do using the input form
 const createTodo = () => {
   todoState.invalid = null
   if (todoState.todo !== '') {
