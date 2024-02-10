@@ -35,8 +35,8 @@ Before starting, make sure that the following tools are installed on your comput
 If you would like to run the Vue Todos App on your local machine, you will need to follow these instructions:
 
 ```sh
-$ git clone git@gitlab.com:patkennedy79/vue-weather-app.git
-$ cd vue-weather-app
+$ git https://github.com/carmen-v/vue-todo.git
+$ cd vue-todo
 $ npm install
 
 ```
